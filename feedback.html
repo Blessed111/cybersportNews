@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> 
+    <title>Comments</title>
+</head> 
+<body onload="feedback()">
+    <header class="header">
+        <div class="wrapper">
+          <nav>
+            <div class="content">
+                <img src="logo.png">
+            <div class="logo"><a href="#">Cybersport News</a></div>
+              <ul class="links">
+                <li><a href="page1_1.html">News</a></li>
+                <li><a href="matches.html">Matches</a></li>
+                <li>
+                  <a href="#" class="desktop-link">Games</a>
+                  <input type="checkbox" id="show-features">
+                  <label for="show-features">Features</label>
+                  <ul>
+                    <li><a href="#">CS:GO</a></li>
+                    <li><a href="#">Dota 2</a></li>
+                    <li><a href="#">FIFA</a></li>
+                    <li><a href="#">Apex Legends</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="desktop-link">Gamers</a>
+                  <input type="checkbox" id="show-services">
+                  <ul>
+                    <li><a href="#">Legends</a></li>
+                    <li><a href="page2.html">Professionals</a></li>
+                    <li><a href="#">Streamers</a></li>
+                    <li>
+                      <a href="#" class="desktop-link">More Items</a>
+                      <input type="checkbox" id="show-items">
+                      <label for="show-items">More Items</label>
+                      <ul>
+                        <li><a href="#">Sub Menu 1</a></li>
+                        <li><a href="#">Sub Menu 2</a></li>
+                        <li><a href="#">Sub Menu 3</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li id="checkUserLog"></li>
+                <input type="text" name="search" value="" autocomplete="off" 
+                 placeholder="Search"id="show-search">
+                <label for="show-search" class="search-icon"><i class="fas fa-search">
+                </i></label>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      
+        <div class="dummy-text">
+      </div>
+      </header>
+    <div class="main">
+      <div class="left">
+        <h1 class="inf">Your opinion about our Web-site</h1>
+        <input id="comment" type="text" placeholder="comment" required>
+        <button onclick="addComment()" id="btn">Add</button>
+      </div>
+        <div id="list">
+        </div>
+    </div>
+
+    <!--FOOTER-->
+   <section class="social">
+    <div style="position:relative;overflow:hidden;">
+      <a href="https://yandex.kz/maps/org/mezhdunarodny_universitet_informatsionnykh_tekhnologiy/1016114729/?utm_medium=mapframe&utm_source=maps" 
+      style="color:#eee;font-size:12px;position:absolute;top:0px;">Международный университет Информационных Технологий</a>
+      <a href="https://yandex.kz/maps/162/almaty/category/university_college/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">ВУЗ в Алматы</a>
+      <iframe src="https://yandex.kz/map-widget/v1/-/C8qTRX2G" width="600" 
+      height="340" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+  
+  </div>
+  <div class="border1">
+    
+  </div>
+  <div class="box">
+      <div class="contact">
+        <p>Created by</p>
+        <p>Mr.Imangali</p>
+      </div>
+  
+      <div class="social-menu">
+        <ul class="social-icon">
+          <li><a href="#" class="social-link"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#" class="social-link"><i class="fab fa-twitter-square"></i></a></li>
+          <li><a href="#" class="social-link"><i class="fab fa-youtube"></i></a></li>
+          <li><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      </div>
+    </section>
+
+</div>
+</body>
+
+<script src="feedback.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>	
+<script src="sign.js"></script>
+</html>

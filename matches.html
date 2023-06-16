@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Matches</title>
+<!-- Stylesheets -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+</head>
+
+<body onload="checkUserLogInOut()">
+
+<div class="page-wrapper">
+    <!-- Preloader -->
+    <div class="preloader"><div class="icon"></div></div>
+
+
+     <header class="header">
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+          <img src="logo.png">
+      <div class="logo"><a href="#">Cybersport News</a></div>
+        <ul class="links">
+          <li><a href="page1_1.html">News</a></li>
+          <li><a href="matches.html">Matches</a></li>
+          <li>
+            <a href="#" class="desktop-link">Games</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Features</label>
+            <ul>
+              <li><a href="#">CS:GO</a></li>
+              <li><a href="#">Dota 2</a></li>
+              <li><a href="#">FIFA</a></li>
+              <li><a href="#">Apex Legends</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link">Gamers</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services">Services</label>
+            <ul>
+              <li><a href="#">Legends</a></li>
+              <li><a href="page2.html">Professionals</a></li>
+              <li><a href="#">Streamers</a></li>
+              <li>
+                <a href="#" class="desktop-link">More Items</a>
+                <input type="checkbox" id="show-items">
+                <label for="show-items">More Items</label>
+                <ul>
+                  <li><a href="#">Sub Menu 1</a></li>
+                  <li><a href="#">Sub Menu 2</a></li>
+                  <li><a href="#">Sub Menu 3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li id="checkUserLog"></li>
+        </ul>
+      </div>
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Type Something to Search..." required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+    </nav>
+  </div>
+
+  <div class="dummy-text">
+</div>
+</header>
+
+    <!--End Page Title-->
+
+
+
+
+	<!-- Matches Section -->
+	<section class="matches-section">
+		<div class="auto-container">
+
+			<!-- Matches Info Tabs-->
+			<div class="matches-info-tabs">
+				<!-- Matches Tabs-->
+				<div class="matches-tabs tabs-box">
+				
+					<!--Tab Btns-->
+					<ul class="tab-btns tab-buttons clearfix">
+						<li data-tab="#prod-all" class="tab-btn active-btn"><span>All Matches</span></li>
+						<li data-tab="#prod-matches" class="tab-btn"><span>Upcoming matches</span></li>
+						<li data-tab="#prod-results" class="tab-btn"><span>recent results</span></li>
+					</ul>
+					
+					<!--Tabs Container-->
+					<div class="tabs-content">
+						
+						<!--Tab / Active Tab-->
+						<div class="tab active-tab" id="prod-all">
+							<div class="content">
+								
+								<!-- Matches Block -->
+								<div class="matches-block">
+									<div class="inner-block">
+										<div class="row clearfix">
+											
+											<!-- Content Column -->
+											<div class="content-column col-lg-7 col-md-12 col-sm-12">
+												<div class="inner-column">
+													<ul class="tags">
+														<li>16 participants</li>
+														<li>Upcoming Matches</li>
+													</ul>
+													<div class="title">Watch Stream</div>
+													<h2><a href="matches-single.html">Gambit vs VirtusPro</a></h2>
+													<div class="date">30th MAY 2021, 11:00 PM</div>
+												</div>
+											</div>
+											
+											<!-- Match Column -->
+											<div class="match-column col-lg-5 col-md-12 col-sm-12">
+												<div class="inner-column">
+													<div class="row clearfix">
+														
+														<!-- Match Item -->
+														<div class="match-item col-lg-6 col-md-6 col-sm-12">
+															<div class="inner-item">
+																<div class="icon-box">
+																	<span class="icon flaticon-lion"></span>
+																</div>
+																<a href="#" class="product">Gambit</a>
+															</div>
+														</div>
+														
+														<!-- Match Item -->
+														<div class="match-item col-lg-6 col-md-6 col-sm-12">
+															<div class="inner-item">
+																<div class="icon-box">
+																	<span class="icon flaticon-wolf"></span>
+																</div>
+																<a href="#" class="product">Virtus</a>
+															</div>
+														</div>
+														
+													</div>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								
+								<!-- Matches Block -->
+								<div class="matches-block">
+									<div class="inner-block">
+										<div class="row clearfix">
+											
+											<!-- Content Column -->
+											<div class="content-column col-lg-7 col-md-12 col-sm-12">
+												<div class="inner-column">
+													<ul class="tags">
+														<li>16 participants</li>
+														<li>Upcoming Matches</li>
+													</ul>
+													<div class="title">Recent Results  <span>  16 : 12</span></div>
+													<h2><a href="matches-single.html">Avstralis win this game</a></h2>
+													<div class="date">17th MAY 2021, 11:00 PM</div>
+												</div>
+											</div>
+											
+											<!-- Match Column -->
+											<div class="match-column col-lg-5 col-md-12 col-sm-12">
+												<div class="inner-column">
+													<div class="row clearfix">
+														
+														<!-- Match Item -->
+														<div class="match-item col-lg-6 col-md-6 col-sm-12">
+															<div class="inner-item">
+																<div class="icon-box">
+																	<span class="icon flaticon-bull"></span>
+																</div>
+																<a href="#" class="product">Avstralis</a>
+															</div>
+														</div>
+														
+														<!-- Match Item -->
+														<div class="match-item col-lg-6 col-md-6 col-sm-12">
+															<div class="inner-item">
+																<div class="icon-box">
+																	<span class="icon flaticon-playground"></span>
+																</div>
+																<a href="#" class="product">NIP</a>
+															</div>
+														</div>
+														
+													</div>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								
+								<!-- Matches Block -->
+								<div class="matches-block">
+									<div class="inner-block">
+										<div class="row clearfix">
+											
+											<!-- Content Column -->
+											<div class="content-column col-lg-7 col-md-12 col-sm-12">
+												<div class="inner-column">
+													<ul class="tags">
+														<li>15 participants</li>
+														<li>Upcoming Matches</li>
+													</ul>
+													<div class="title">Recent Results <span> 14 : 16</span></div>
+													<h2><a href="matches-single.html">Navi win in this game</a></h2>
+													<div class="date">11th MAY 2021, 11:00 PM</div>
+												</div>
+											</div>
+											
+											<!-- Match Column -->
+											<div class="match-column col-lg-5 col-md-12 col-sm-12">
+												<div class="inner-column">
+													<div class="row clearfix">
+														
+														<!-- Match Item -->
+														<div class="match-item col-lg-6 col-md-6 col-sm-12">
+															<div class="inner-item">
+																<div class="icon-box">
+																	<span class="icon flaticon-skull"></span>
+																</div>
+																<a href="#" class="product">FURIA</a>
+															</div>
+														</div>
+														
+														<!-- Match Item -->
+														<div class="match-item col-lg-6 col-md-6 col-sm-12">
+															<div class="inner-item">
+																<div class="icon-box">
+																	<span class="icon flaticon-bear"></span>
+																</div>
+																<a href="#" class="product">NAVI</a>
+															</div>
+														</div>
+														
+													</div>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								
+
+								<!-- Matches Block -->
+								<div class="matches-block">
+									<div class="inner-block">
+										<div class="row clearfix">
+											
+											<!-- Content Column -->
+											<div class="content-column col-lg-7 col-md-12 col-sm-12">
+												<div class="inner-column">
+													<ul class="tags">
+														<li>17 participants</li>
+														<li>Upcoming Matches</li>
+													</ul>
+													<div class="title">Recent Results  <span>  19 : 22</span></div>
+													<h2><a href="matches-single.html">foeZe win in this game</a></h2>
+													<div class="date">8th MAY 2021, 11:00 PM</div>
+												</div>
+											</div>
+											
+											<!-- Match Column -->
+											<div class="match-column col-lg-5 col-md-12 col-sm-12">
+												<div class="inner-column">
+													<div class="row clearfix">
+														
+														<!-- Match Item -->
+														<div class="match-item col-lg-6 col-md-6 col-sm-12">
+															<div class="inner-item">
+																<div class="icon-box">
+																	<span class="icon flaticon-portrait"></span>
+																</div>
+																<a href="#" class="product">North</a>
+															</div>
+														</div>
+														
+														<!-- Match Item -->
+														<div class="match-item col-lg-6 col-md-6 col-sm-12">
+															<div class="inner-item">
+																<div class="icon-box">
+																	<span class="icon flaticon-bird"></span>
+																</div>
+																<a href="#" class="product">forZe</a>
+															</div>
+														</div>
+														
+													</div>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						
+
+
+
+						<!--Tab-->
+                        <div class="tab" id="prod-matches">
+							<div class="content">
+								
+								<!-- Matches Block -->
+								<div class="matches-block">
+									<div class="inner-block">
+										<div class="row clearfix">
+											
+											<!-- Content Column -->
+											<div class="content-column col-lg-7 col-md-12 col-sm-12">
+												<div class="inner-column">
+													<ul class="tags">
+														<li>17 participants</li>
+														<li>Upcoming Matches</li>
+													</ul>
+													<div class="title">Recent Results  <span>  19 : 22</span></div>
+													<h2><a href="matches-single.html">foeZe win in this game</a></h2>
+													<div class="date">8th MAY 2021, 11:00 PM</div>
+												</div>
+											</div>
+											
+											<!-- Match Column -->
+											<div class="match-column col-lg-5 col-md-12 col-sm-12">
+												<div class="inner-column">
+													<div class="row clearfix">
+														
+														<!-- Match Item -->
+														<div class="match-item col-lg-6 col-md-6 col-sm-12">
+															<div class="inner-item">
+																<div class="icon-box">
+																	<span class="icon flaticon-portrait"></span>
+																</div>
+																<a href="#" class="product">North</a>
+															</div>
+														</div>
+														
+														<!-- Match Item -->
+														<div class="match-item col-lg-6 col-md-6 col-sm-12">
+															<div class="inner-item">
+																<div class="icon-box">
+																	<span class="icon flaticon-bird"></span>
+																</div>
+																<a href="#" class="product">forZe</a>
+															</div>
+														</div>
+														
+													</div>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								
+								<!-- Matches Block -->
+								<div class="matches-block">
+									<div class="inner-block">
+										<div class="row clearfix">
+											
+											<!-- Content Column -->
+											<div class="content-column col-lg-7 col-md-12 col-sm-12">
+												<div class="inner-column">
+													<ul class="tags">
+														<li>17 participants</li>
+														<li>Upcoming Matches</li>
+													</ul>
+													<div class="title">Recent Results  <span>  19 : 22</span></div>
+													<h2><a href="matches-single.html">foeZe win in this game</a></h2>
+													<div class="date">8th MAY 2021, 11:00 PM</div>
+												</div>
+											</div>
+											
+											<!-- Match Column -->
+											<div class="match-column col-lg-5 col-md-12 col-sm-12">
+												<div class="inner-column">
+													<div class="row clearfix">
+														
+														<!-- Match Item -->
+														<div class="match-item col-lg-6 col-md-6 col-sm-12">
+															<div class="inner-item">
+																<div class="icon-box">
+																	<span class="icon flaticon-portrait"></span>
+																</div>
+																<a href="#" class="product">North</a>
+															</div>
+														</div>
+														
+														<!-- Match Item -->
+														<div class="match-item col-lg-6 col-md-6 col-sm-12">
+															<div class="inner-item">
+																<div class="icon-box">
+																	<span class="icon flaticon-bird"></span>
+																</div>
+																<a href="#" class="product">forZe</a>
+															</div>
+														</div>
+														
+													</div>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								
+								<!-- Matches Block -->
+								<div class="matches-block">
+									<div class="inner-block">
+										<div class="row clearfix">
+											
+											<!-- Content Column -->
+											<div class="content-column col-lg-7 col-md-12 col-sm-12">
+												<div class="inner-column">
+													<ul class="tags">
+														<li>26 participants</li>
+														<li>Upcoming Matches</li>
+													</ul>
+													<div class="title">Recent Results  <span>.  40 : 32</span></div>
+													<h2><a href="matches-single.html">justice league Matches of power</a></h2>
+													<div class="date">18th MAY 2019, 11:00 PM</div>
+												</div>
+											</div>
+											
+											<!-- Match Column -->
+											<div class="match-column col-lg-5 col-md-12 col-sm-12">
+												<div class="inner-column">
+													<div class="row clearfix">
+														
+														<!-- Match Item -->
+														<div class="match-item col-lg-6 col-md-6 col-sm-12">
+															<div class="inner-item">
+																<div class="icon-box">
+																	<span class="icon flaticon-portrait"></span>
+																</div>
+																<a href="#" class="product">Cute cat</a>
+															</div>
+														</div>
+														
+														<!-- Match Item -->
+														<div class="match-item col-lg-6 col-md-6 col-sm-12">
+															<div class="inner-item">
+																<div class="icon-box">
+																	<span class="icon flaticon-bird"></span>
+																</div>
+																<a href="#" class="product">black crow</a>
+															</div>
+														</div>
+														
+													</div>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						
+						<!--Tab-->
+                        <div class="tab" id="prod-results">
+							<div class="content">
+								
+								<!-- Matches Block -->
+								<div class="matches-block">
+									<div class="inner-block">
+										<div class="row clearfix">
+											
+											<!-- Content Column -->
+											<div class="content-column col-lg-7 col-md-12 col-sm-12">
+												<div class="inner-column">
+													<ul class="tags">
+														<li>17 participants</li>
+														<li>Upcoming Matches</li>
+													</ul>
+													<div class="title">Recent Results  <span>  19 : 22</span></div>
+													<h2><a href="matches-single.html">foeZe win in this game</a></h2>
+													<div class="date">8th MAY 2021, 11:00 PM</div>
+												</div>
+											</div>
+											
+											<!-- Match Column -->
+											<div class="match-column col-lg-5 col-md-12 col-sm-12">
+												<div class="inner-column">
+													<div class="row clearfix">
+														
+														<!-- Match Item -->
+														<div class="match-item col-lg-6 col-md-6 col-sm-12">
+															<div class="inner-item">
+																<div class="icon-box">
+																	<span class="icon flaticon-portrait"></span>
+																</div>
+																<a href="#" class="product">North</a>
+															</div>
+														</div>
+														
+														<!-- Match Item -->
+														<div class="match-item col-lg-6 col-md-6 col-sm-12">
+															<div class="inner-item">
+																<div class="icon-box">
+																	<span class="icon flaticon-bird"></span>
+																</div>
+																<a href="#" class="product">forZe</a>
+															</div>
+														</div>
+														
+													</div>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								
+								<!-- Matches Block -->
+								<div class="matches-block">
+									<div class="inner-block">
+										<div class="row clearfix">
+											
+											<!-- Content Column -->
+											<div class="content-column col-lg-7 col-md-12 col-sm-12">
+												<div class="inner-column">
+													<ul class="tags">
+														<li>17 participants</li>
+														<li>Upcoming Matches</li>
+													</ul>
+													<div class="title">Recent Results  <span>  19 : 22</span></div>
+													<h2><a href="matches-single.html">foeZe win in this game</a></h2>
+													<div class="date">8th MAY 2021, 11:00 PM</div>
+												</div>
+											</div>
+											
+											<!-- Match Column -->
+											<div class="match-column col-lg-5 col-md-12 col-sm-12">
+												<div class="inner-column">
+													<div class="row clearfix">
+														
+														<!-- Match Item -->
+														<div class="match-item col-lg-6 col-md-6 col-sm-12">
+															<div class="inner-item">
+																<div class="icon-box">
+																	<span class="icon flaticon-portrait"></span>
+																</div>
+																<a href="#" class="product">North</a>
+															</div>
+														</div>
+														
+														<!-- Match Item -->
+														<div class="match-item col-lg-6 col-md-6 col-sm-12">
+															<div class="inner-item">
+																<div class="icon-box">
+																	<span class="icon flaticon-bird"></span>
+																</div>
+																<a href="#" class="product">forZe</a>
+															</div>
+														</div>
+														
+													</div>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Matches Section -->
+	
+	<!-- Main Footer -->
+      <section class="social">
+    <div style="position:relative;overflow:hidden;">
+      <a href="https://yandex.kz/maps/org/mezhdunarodny_universitet_informatsionnykh_tekhnologiy/1016114729/?utm_medium=mapframe&utm_source=maps" 
+      style="color:#eee;font-size:12px;position:absolute;top:0px;">Международный университет Информационных Технологий</a>
+      <a href="https://yandex.kz/maps/162/almaty/category/university_college/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">ВУЗ в Алматы</a>
+      <iframe src="https://yandex.kz/map-widget/v1/-/C8qTRX2G" width="600" 
+      height="340" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+  
+  </div>
+  <div class="border1">
+    
+  </div>
+  <div class="box">
+      <div class="contact">
+        <p>Created by</p>
+        <p>Mr.Azamat</p>
+      </div>
+  
+      <div class="social-menu">
+        <ul class="social-icon">
+          <li><a href="#" class="social-link"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#" class="social-link"><i class="fab fa-twitter-square"></i></a></li>
+          <li><a href="#" class="social-link"><i class="fab fa-youtube"></i></a></li>
+          <li><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      </div>
+    </section>
+	
+</div>
+<!--End pagewrapper-->
+
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/scrollbar.js"></script>
+<script src="js/script.js"></script>
+<script src="page2.js"></script>
+    <script src="sign.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+</html>

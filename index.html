@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add</title>
+	<script type="text/javascript">
+		
+		function getListOfPlayers() {
+		 	return JSON.parse(localStorage.getItem('players') || "[]");
+		}
+
+		function savePlayers(players) {
+			localStorage.setItem('players', JSON.stringify(players));
+		}
+
+		function add() {
+			let players = getListOfPlayers();
+			players.push({nick: document.getElementById("nickname").value,
+				fullName: document.getElementById("fullname").value,
+				information: document.getElementById("information").value});
+			savePlayers(players);
+			clear();
+		}
+			
+		function remove() {
+			var removeNick = document.getElementById("remove_nick").value;
+			let players = getListOfPlayers();
+			for (var i = 0; i < players.length; i++) {
+	        	if (players[i].nickname === removeNick) {
+	        		players.splice(i, 1);
+	        	}
+	        }
+	        savePlayers(players);
+			clear();
+		}
+
+	 	function clear() {
+		    document.getElementById("remove_nick").value = "";
+		    document.getElementById("nickname").value = "";
+		    document.getElementById("fullname").value = "";
+		    document.getElementById("information").value = "";
+    	}
+
+	</script>
+</head>
+<body>
+	<div>
+    	Remove by player nick:
+    	<input type="text" id="remove_nick">
+    	<br>
+    	<button onclick="remove()">Remove</button>
+  	</div>
+  	<br>
+  	<div>
+  	<table>
+  		<tr>
+	   		<td>Nick name:</td>
+	    	<td><input type="text" id="nickname"></td>
+	    </tr>
+	    <tr>
+	    	<td>Full name:</td>
+	    	<td><input type="text" id="fullname"></td>
+	    </tr>
+	    <tr>
+			<td>Information:</td>
+	    	<td><input type="text" id="information"></td>
+	    </tr>
+	    <tr>
+	    	<td></td>
+	   		 <td rowspan="2"><button onclick="add()">Add</button></td>
+		</tr>
+	</table>
+ </div>
+</body>
+</html>

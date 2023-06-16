@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="page2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body onload="checkUserLogInOut()">
+  
+  <header class="header">
+  <div class="wrapper">
+    <nav>
+      <div class="content">
+          <img src="logo.png">
+      <div class="logo"><a href="#">Cybersport News</a></div>
+        <ul class="links">
+          <li><a href="page1_1.html">News</a></li>
+          <li><a href="matches.html">Matches</a></li>
+          <li>
+            <a href="#" class="desktop-link">Games</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Features</label>
+            <ul>
+              <li><a href="#">CS:GO</a></li>
+              <li><a href="#">Dota 2</a></li>
+              <li><a href="#">FIFA</a></li>
+              <li><a href="#">Apex Legends</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link">Gamers</a>
+            <input type="checkbox" id="show-services">
+            <ul>
+              <li><a href="#">Legends</a></li>
+              <li><a href="page2.html">Professionals</a></li>
+              <li><a href="#">Streamers</a></li>
+              <li>
+                <a href="#" class="desktop-link">More Items</a>
+                <input type="checkbox" id="show-items">
+                <label for="show-items">More Items</label>
+                <ul>
+                  <li><a href="#">Sub Menu 1</a></li>
+                  <li><a href="#">Sub Menu 2</a></li>
+                  <li><a href="#">Sub Menu 3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li id="checkUserLog"></li>
+          <input type="text" name="search" value="" autocomplete="off" 
+          onkeyup="searchFunction()" placeholder="Search"id="show-search">
+          <label for="show-search" class="search-icon"><i class="fas fa-search">
+          </i></label>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="dummy-text">
+</div>
+</header>
+<main class="main">
+    <ul id="wrapper2">
+        <li class="li">
+            <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go" class="a"> S1mple</a>
+            <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go"><button class="lab" >More Info</button></a>            
+            <img class="img"src="s1mple.jpg" alt="" style="width: 80px; height: 85px; border-radius: 50%; display: flex;  margin-left: 200px;
+  margin-top: -90px;">  
+        </li>
+        <li class="li">
+          <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go" class="a"> Ramzes666</a>
+          <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go"><button class="lab" >More Info</button></a>            
+          <img class="img"src="images/ramzes.png" alt="" style="width: 80px; height: 85px; border-radius: 50%; display: flex;  margin-left: 200px;
+      margin-top: -90px;"> 
+      </li>
+      <li class="li">
+        <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go" class="a"> Ax1le</a>
+        <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go"><button class="lab" >More Info</button></a>    
+        <img class="img"src="images/ax1le.jpg" alt="" style="width: 80px; height: 85px; border-radius: 50%; display: flex;  margin-left: 200px;
+        margin-top: -90px;">
+    </li>
+    <li class="li">
+      <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go" class="a"> Boombl4</a>
+      <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go"><button class="lab" >More Info</button></a>            
+
+      <img class="img"src="images/boom.jpg" alt="" style="width: 80px; height: 75px; border-radius: 50%; display: flex;  margin-left: 200px;
+  margin-top: -90px;">
+  </li>
+  <li class="li">
+    <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go" class="a"> XANTARES</a>
+    <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go"><button class="lab" >More Info</button></a>            
+
+    <img class="img"src="images/xan.jpg" alt="" style="width: 80px; height: 85px; border-radius: 50%; display: flex;  margin-left: 200px;
+  margin-top: -90px;">
+</li>
+<li class="li">
+  <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go" class="a"> K1to</a>
+  <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go"><button class="lab" >More Info</button></a>            
+
+  <img class="img"src="images/kito.jpg" alt="" style="width: 80px; height: 85px; border-radius: 50%; display: flex;  margin-left: 200px;
+  margin-top: -90px;">
+</li>
+<li class="li">
+  <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go" class="a"> KennyS</a>
+  <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go"><button class="lab" >More Info</button></a>            
+
+  <img class="img"src="images/kennys.jpg" alt="" style="width: 80px; height: 85px; border-radius: 50%; display: flex;  margin-left: 200px;
+  margin-top: -90px;">
+</li>
+<li class="li">
+  <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go" class="a"> Dev1ce</a>
+  <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go"><button class="lab" >More Info</button></a>            
+
+  <img class="img"src="images/device.jpg" alt="" style="width: 80px; height: 85px; border-radius: 50%; display: flex;  margin-left: 200px;
+  margin-top: -90px;">
+</li>
+<li class="li">
+  <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go" class="a"> JW</a>
+  <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go"><button class="lab" >More Info</button></a>            
+
+  <img class="img"src="images/JW.jpg" alt="" style="width: 80px; height: 85px; border-radius: 50%; display: flex;  margin-left: 200px;
+  margin-top: -90px;">
+</li>
+<li class="li">
+  <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go" class="a"> Hobb1t</a>
+  <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go"><button class="lab" >More Info</button></a>            
+
+  <img class="img"src="images/hob.jpg" alt="" style="width: 80px; height: 85px; border-radius: 50%; display: flex;  margin-left: 200px;
+  margin-top: -90px;">
+</li>
+<li class="li">
+  <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go" class="a"> No[o]ne</a>
+  <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go"><button class="lab" >More Info</button></a>            
+
+  <img class="img"src="images/noone.jpg" alt="" style="width: 80px; height: 85px; border-radius: 50%; display: flex;  margin-left: 200px;
+  margin-top: -90px;">
+</li>
+<li class="li">
+  <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go" class="a"> Stew2K</a>
+  <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go"><button class="lab" >More Info</button></a>            
+
+  <img class="img"src="images/stew.jpg" alt="" style="width: 80px; height: 85px; border-radius: 50%; display: flex;  margin-left: 200px;
+  margin-top: -90px;">
+</li>
+<li class="li">
+  <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go" class="a"> Adren</a>
+  <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go"><button class="lab" >More Info</button></a>            
+
+  <img class="img"src="images/adren.jpg" alt="" style="width: 80px; height: 85px; border-radius: 50%; display: flex;  margin-left: 200px;
+  margin-top: -90px;">
+</li>
+<li class="li">
+  <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go" class="a"> Pimp</a>
+  <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go"><button class="lab" >More Info</button></a>            
+
+  <img class="img"src="images/pimp.jpg" alt="" style="width: 80px; height: 85px; border-radius: 50%; display: flex;  margin-left: 200px;
+  margin-top: -90px;">
+</li>
+<li class="li">
+  <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go" class="a"> Electron1c</a>
+  <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go"><button class="lab" >More Info</button></a>            
+
+  <img class="img"src="images/elec.jpg" alt="" style="width: 80px; height: 85px; border-radius: 50%; display: flex;  margin-left: 200px;
+  margin-top: -90px;">
+</li>
+<li class="li">
+  <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go" class="a"> Sh1ro</a>
+  <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go"><button class="lab" >More Info</button></a>            
+
+  <img class="img"src="images/shi.jpg" alt="" style="width: 80px; height: 85px; border-radius: 50%; display: flex;  margin-left: 200px;
+  margin-top: -90px;">
+</li>
+<li class="li">
+  <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go" class="a"> Coldzera</a>
+  <a href="https://www.cybersport.ru/base/gamers/s1mple/cs-go"><button class="lab" >More Info</button></a>            
+
+  <img class="img"src="images/cold.jpg" alt="" style="width: 80px; height: 85px; border-radius: 50%; display: flex;  margin-left: 200px;
+  margin-top: -90px;">
+</li>
+    </ul>
+    <div class="inv">
+      <p id="show">Nothing found</p>
+    </div>
+
+
+    <!--FOOTER-->
+    <section class="social">
+      <div style="position:relative;overflow:hidden;">
+        <a href="https://yandex.kz/maps/org/mezhdunarodny_universitet_informatsionnykh_tekhnologiy/1016114729/?utm_medium=mapframe&utm_source=maps" 
+        style="color:#eee;font-size:12px;position:absolute;top:0px;">Международный университет Информационных Технологий</a>
+        <a href="https://yandex.kz/maps/162/almaty/category/university_college/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">ВУЗ в Алматы</a>
+        <iframe src="https://yandex.kz/map-widget/v1/-/C8qTRX2G" width="600" 
+        height="340" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+    
+    </div>
+    <div class="border1">
+    
+    </div>
+    <div class="box">
+        <div class="contact">
+          <p>Created by</p>
+          <p>Mr.Imangali</p>
+        </div>
+    
+        <div class="social-menu">
+          <ul class="social-icon">
+            <li><a href="#" class="social-link"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#" class="social-link"><i class="fab fa-twitter-square"></i></a></li>
+            <li><a href="#" class="social-link"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+        </div>
+      </section>
+
+
+    </main>
+
+
+
+
+    <script src="page2.js"></script>
+    <script src="sign.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+</html>
+
